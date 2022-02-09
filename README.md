@@ -60,7 +60,7 @@ To fix this you could try to:
 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
 ```
 
-## With pip 20.2.0
+## If we try to downgrade to pip 20.2.0 we get
 ```
 ERROR: After October 2020 you may experience errors when installing or updating packages. This is because pip will change the way that it resolves dependency conflicts.
 

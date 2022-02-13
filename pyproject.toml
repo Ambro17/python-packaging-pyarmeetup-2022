@@ -1,6 +1,23 @@
 [build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pyarmeetup2020"
+description = "Sample package"
+version = "0.0.3"
+authors = [{name = "Ambro17", email = "ambro17.1@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.6"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+
+# Optional section to tweak the flit default of 'include everything tracked by git' 
+# elative paths from the directory containing pyproject.toml
+# https://flit.readthedocs.io/en/latest/pyproject_toml.html?highlight=sdist#sdist-section
+[tool.flit.sdist]
+exclude = [
+    "src/pyarmeetup2020/excluded/",
+    "src/pyarmeetup2020/top.txt",
+
 ]
-build-backend = "setuptools.build_meta"
